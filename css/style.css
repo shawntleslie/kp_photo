@@ -226,12 +226,14 @@ ul { list-style: none; }
 #side-nav-inner ul#categories { margin: 20px 0 10px; }
 #side-nav-inner ul li a { font: 18px/35px 'Yanone Kaffeesatz', "droid sans", calibri, arial, sans-serif; text-transform: uppercase; letter-spacing: 1px; color: #999; display: block; padding-right: 25px; font-weight: 300; }
 	.textshadow #side-nav-inner ul li a { text-shadow: 0 1px 0px #fff; }
-#side-nav-inner ul li a:hover { color: #777; background: url(../img/pointer.jpg) right top no-repeat; text-decoration: none; }
+#side-nav-inner ul li a:hover, #side-nav-inner ul li a:focus { color: #777; background: url(../img/pointer.jpg) right top no-repeat; text-decoration: none; }
+#side-nav-inner ul li a:active { color: #111; }
+
 
 #side-nav-inner ul#meta { padding-top: 10px; background: url(../img/hr.jpg) repeat-x 0 0; }
 #side-nav-inner ul#meta li a { color: #76bcbc; }
 #side-nav-inner ul#meta li a:hover { color: #619b9b; }
-
+#side-nav-inner ul#meta li a:active { color: #478b8b; }
 #side-nav-inner a#logo { margin-left: 68px; height: 38px; width: 198px; background: url(../img/logo.png) no-repeat 0 0; }
 #side-nav-inner a span { font: 12px/1 arial, sans-serif; display: block; position: relative; right: 20px; text-transform: lowercase; }
 
@@ -310,6 +312,16 @@ input[type=text]:focus, form input[type=email]:focus, textarea:focus { backgroun
 .ie7 #footer #form-wrapper textarea { height: 88px; }
 .ie7 #footer #send-btn { position: absolute; top: 163px; left: 0px; padding-right: 7px; }
 .ie7 #footer-btm { margin-bottom: 15px; padding: 0;}
+
+/********************************************
+	*	IE 7    *********************************
+*********************************************/
+.ie6 #side-nav-inner a#logo { background: url(../img/logo-old.jpg) no-repeat 0 0; margin-right: 20px; }
+.ie6 #footer { position: relative; margin: 0; padding: 0; height: 280px; zoom: 1; }
+.ie6 #footer #form-wrapper { position: relative; }
+.ie6 #footer #form-left input { height: 30px; width: 230px; background-color: #c8f3f3; margin-bottom: 5px; padding-left: 5px; border: none; color: #397171; }
+.ie6 textarea { height: 88px; }
+.ie6 #footer .send { position: absolute; top: 163px; left: 0px; padding-right: 7px; }
 
 /**************************************************************************************************************
  * Non-semantic helper classes: please define your styles before this section.
